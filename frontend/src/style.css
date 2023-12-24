@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+   padding: 0;
+   margin: 0;
+}
+body{
+   background-color: #101010;
+   font-family: 'Poppins', sans-serif;
+   color: white;
+}
+/* Navbar */
+.navbar{
+   padding: 10px 15px;
+}
+.navbar-brand{
+   font-weight: 700;
+   font-size: 23px;
+}
+.navbar-brand span{
+   color: #FF4A4A;
+   /* font-weight: 600; */
+}
+.navbar-brand img{
+   height: 38px;
+   margin-left: 9px;
+   margin-top: -2px;
+   box-shadow: 0 12px 19px -9px #CD84F1;
+}
+/* Todo Home */
+.todoHome{
+   max-width: 48vw;
+   margin: 0 auto;
+   margin-top: 30px;
+   border-radius: 20px;
+}
+.todoTitle{
+   font-size: 55px;
+   line-height: 70px;
+   color: white;
+   font-weight: 800;
+   text-align: center;
+}
+.todoTitle img{
+   height: 70px;
+   margin-top: -4px;
+   margin-left: 10px;
+}
+/* Login Signup Form */
+.authForm h2{
+   font-size: 40px;
+   font-weight: 900px;
+}
+.authForm input{
+   box-shadow: 0 8px 10px -8px #41F6DB;
+}
+/* Add note */
+.addNote{
+   background-color: #ffffff;
+   border-radius: 50px;
+   max-width: 100%;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-left: 25px;
+   margin-top: 27px;
+   box-shadow: 0 12px 15px -9px #F64C4C;
+   transition: box-shadow .2s ease;
+}
+.addNote:hover{
+   box-shadow: 0 20px 70px -10px #F64C4C;
+}
+.addNote input{
+   border: none;
+   outline: none;
+   background-color: transparent;
+   font-size: 18px;
+   width: 70%;
+   padding: 7px 0;
+}
+.addNote button{
+   padding: 23px 36px;
+   border-radius: 37px;
+   font-size: 14px;
+   float: right;
+   background-color: #FF4A4A;
+   color: white;
+   border: none;
+   cursor: pointer;
+   transition: all .2s ease;
+}
+.addNote button:hover{
+   background-color: #f6331e;
+}
+/* Note item */
+.todoNotes{
+   max-width: 100%;
+   margin: 0 auto;
+   margin-top: 20px;
+}
+.todoNotes h2{
+   color: white;
+}
+.noteItem{
+   display: flex;
+   justify-content: space-between;
+   margin: 17px 0;
+   padding: 26px 24px 12px 24px;
+   margin-bottom: 5px;
+   border-radius: 20px;
+   color: white;
+   transition: transform .2s ease,box-shadow .2s ease;
+   background-color: #12B57A;
+   box-shadow: 0 12px 19px -9px #12B57A;
+}
+.noteItem:hover{
+   transform: translate(0px,-3px);
+   box-shadow: 0 20px 70px -10px #12B57A;
+}
+.noteItem:nth-child(2){
+   background-color: #CD84F1;
+   box-shadow: 0 12px 19px -9px #CD84F1;
+}
+.noteItem:nth-child(3){
+   background-color: #f56565;
+   box-shadow: 0 12px 19px -9px #F64C4C;
+}
+.noteItem:nth-child(4){
+   background-color: #67cbbc;
+   box-shadow: 0 12px 19px -9px #41F6DB;
+}
+.noteItem:nth-child(5){
+   background-color: #7f5fdd;
+   box-shadow: 0 12px 19px -9px #7f5fdd;
+}
+.noteItem:nth-child(2):hover{
+   box-shadow: 0 20px 70px -10px #CD84F1;
+}
+.noteItem:nth-child(3):hover{
+   box-shadow: 0 20px 70px -10px #F64C4C;
+}
+.noteItem:nth-child(4):hover{
+   box-shadow: 0 20px 70px -10px #41F6DB;
+}
+.noteItem:nth-child(5):hover{
+   box-shadow: 0 20px 70px -10px #7f5fdd;
+}
+.noteItem div{
+   display: flex;
+   align-items: center;
+}
+.noteItem button{
+   margin-right: 13px;
+   background-color: transparent;
+   border: none;
+   margin-top: -16px;
+   cursor: pointer;
+}
+.noteItem button img{
+   height: 24px;
+}
+.noteItem p{
+   font-size: 17px;
+   color: white;
+   text-shadow: rgb(0, 0, 0) 1px 0 6px;
+}
+.noteItem.noteItemDone p{
+   text-decoration: line-through;
+}
+.noteItem span{
+   font-size: 27px;
+   color: white;
+   margin-top: -4px;
+}
+.noteItemClock button img{
+   height: 35px;
+}
+
+@media screen and (max-width: 1000px){
+   .todoHome{
+      max-width: 90vw;
+   }
+   .addNote button{
+      /* padding: 17px 36px; */
+   }
+}
+@media screen and (max-width: 555px){
+   .addNote button{
+      padding: 17px 30px;
+   }
+}
+@media screen and (max-width: 400px){
+   .addNote button{
+      padding: 12px 22px;
+   }
+}
