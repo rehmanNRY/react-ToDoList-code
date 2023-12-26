@@ -6,10 +6,12 @@ const NotesSchema = new Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user'
     },
+    // Title: is the task is done or pending
     title: {
         type: Boolean,
         default: false
     },
+    // Description: Task saves here
     description: {
         type: String,
         required: true
