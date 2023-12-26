@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react'
+import React, { useContext, useState } from 'react'
 import noteContext from "../context/notes/noteContext";
 import checkImg from '../images/check.png';
 import uncheckImg from '../images/uncheck.png';
@@ -33,14 +33,14 @@ const NoteItem = (props) => {
     const [checkImgShow, setcheckImgShow] = useState(note.title? checkImg : uncheckImg);
     const [noteItemCls, setNoteItemCls] = useState(note.title? "noteItemDone" : "noteItemUndone");
     const checkBtnClick = async (noteId) => {
-        if (checkImgShow == uncheckImg) {
+        if (checkImgShow === uncheckImg) {
             setcheckImgShow(clockImg);
             setNoteItemCls("noteItemClock");
-        } else if (checkImgShow == clockImg) {
+        } else if (checkImgShow === clockImg) {
             await toggleNoteTitle(noteId);
             setcheckImgShow(checkImg);
             setNoteItemCls("noteItemDone");
-        } else if (checkImgShow == checkImg) {
+        } else if (checkImgShow === checkImg) {
             await toggleNoteTitle(noteId);
             setcheckImgShow(uncheckImg);
             setNoteItemCls("noteItemUndone");

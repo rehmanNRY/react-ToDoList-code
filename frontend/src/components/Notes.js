@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useRef, useState} from 'react';
+import React, { useContext, useEffect } from 'react';
 import noteContext from "../context/notes/noteContext";
 import NoteItem from './NoteItem';
 import { useNavigate } from 'react-router-dom';
